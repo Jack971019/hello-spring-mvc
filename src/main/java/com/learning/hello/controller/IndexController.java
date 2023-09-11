@@ -9,8 +9,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class IndexController {
 
-    @GetMapping String index(){
+    @GetMapping
+    public String index(){
 
         return "homepage";
+    }
+
+    @GetMapping("/about")
+    public String aboutUs(){
+
+        return "about";
+    }
+
+    @GetMapping("/terms")
+    public String termsAndConditions(){
+
+        return "terms";
     }
 }
